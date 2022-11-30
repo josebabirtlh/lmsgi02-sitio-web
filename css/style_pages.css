@@ -1,0 +1,147 @@
+/*
+* Módulo:  LMSGI - Lenguaje de marcas y sistemas de gestión de la información
+* Unidad:  LMSGI02 - Desarrollo web con HTML5 y CSS3. (20%)
+* Tarea:   TE02 - Tarea evaluativa 2 (80%)
+* Nombre:  Joseba Ercilla Olabarri
+* Fecha:   2022-11-28      
+*
+* Estilos exclusivo del resto de las página (excepto home).
+*
+*/
+
+/* Incluimos estilos generales que a continuación complementamos. */
+@import url("style_all.css");
+
+/* Existe una cabecera fija superior con un título y un menú. */
+header {
+  width: 100%;
+  min-height: 50px;
+  background-image: url("../images/avion_header.jpg");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* El título de la cabecera va a la izquierda. */
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem;
+}
+
+/* El menú de la cabecera va a la derecha. */
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 1rem;
+}
+
+nav ul li {
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* Las páginas interiores tiene un título central indicando en que opción nos encontramos. */
+h2 {
+  text-align: center;
+}
+
+/* El cuerpo de las páginas interiores tiene un degrado en el color de fondo. */
+body {
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(231, 240, 245, 1) 0%, rgba(255, 240, 245, 1) 100%);
+}
+
+main {
+  max-width: 80%;
+  height: 70%;
+  margin: auto;
+  overflow: auto;
+}
+
+/* Los elementos de las listas se distinguen por un sombreado. */
+article {
+  max-height: 40%;
+  box-shadow: 10px 10px 5px lightblue;
+  margin: 1rem;
+  padding: 1rem;
+  font-weight: lighter;
+  line-height: 1.5rem;
+}
+
+/* Las páginas de listas pueden tener un título centrado. */
+article h3 {
+  text-align: center;
+}
+
+/* Las páginas de listas pueden tener una imagen de tamaño fijo. */
+article img {
+  height: 6rem;
+  float: left;
+  margin: 1rem;
+}
+
+/* Las páginas de listas tienen un texo que si no cabe, 
+sale un scroll vertical automáticamente. */
+article p {
+  max-height: 50%;
+  overflow: auto;
+}
+
+/* Las páginas de detalle se componen de secciones. */
+section {
+  margin: 2rem;
+}
+
+/* Cada sección tiene un indicador a su izquierda. */
+section h3:before {
+  content: '■ ';
+  position: relative;
+  bottom: .1em;
+  color: #666;
+}
+
+/* El formulario de contacto está centrado y tiene un ancho máximo. */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  min-width: 10rem;
+  margin: auto;
+}
+
+/* El tamaño del botón 'enviar' se ajusta al texto. */
+form input[type="submit"] {
+  width: fit-content;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+form label {
+  margin-top: 1rem;
+}
+
+
+footer {
+  padding-top: 1rem;
+}
+
+/* En algunas secciones la imagen sale a la derecha. */
+.img-flota-izq {
+  height: 9rem;
+  float: left;
+  margin: 1.5rem;
+}
+
+/* En algunas secciones la imagen sale a la izquierda. */
+.img-flota-drch {
+  height: 9rem;
+  float: right;
+  margin: 1.5rem;
+}
