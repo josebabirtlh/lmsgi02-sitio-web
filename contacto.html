@@ -1,0 +1,54 @@
+<!-- 
+* Módulo:  LMSGI - Lenguaje de marcas y sistemas de gestión de la información
+* Unidad:  LMSGI02 - Desarrollo web con HTML5 y CSS3. (20%)
+* Tarea:   TE02 - Tarea evaluativa 2 (80%)
+* Nombre:  Joseba Ercilla Olabarri
+* Fecha:   2022-11-28      
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página de viajes favoritos.">
+  <title>Viajar</title>
+  <!-- Estilos de la página -->
+  <link rel="stylesheet" href="css/style_pages.css">
+  <!-- Fuente de google -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sanss" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <!-- Título cabecera (izquierda) -->
+    <h1>Nuestros viajes favoritos</h1>
+    <nav>
+      <!-- Menú cabecera (derecha) -->
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="/viajes.html">Viajes</a></li>
+        <li><a href="/noticias.html">Noticias</a></li>
+        <li>Contacto</li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Título de la opción de menú elegida -->
+  <h2>¿Hablamos?</h2>
+  <main>
+    <!-- Formulario de contacto con envío por correo -->
+    <form action="mailto:jercilla@birt.eus" method="POST">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="asunto">
+      <label for="asunto">Asunto:</label>
+      <input type="text" id="asunto" name="asunto">
+      <label for="cuentame">Cuéntame:</label>
+      <textarea name="cuentame" id="cuentame" cols="30" rows="10"></textarea>
+      <!-- Botón para enviar formulario -->
+      <input type="submit" value="enviar">
+    </form>
+  </main>
+  <!-- Pie de página -->
+  <footer>
+    © Joseba Ercilla 2022
+  </footer>
+</body>
+</html>
